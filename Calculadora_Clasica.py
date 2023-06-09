@@ -22,12 +22,13 @@ def solo_float(entrada):
 
 
 def dividir(a, b):
-    if b != 0:
-        return a / b
-    else:
+    while b == 0:
         print("No se puede dividir entre cero.")
-        return None
+        b = input("Ingrese otro número\n")
+        b = solo_float(b)
 
+    return a / b    
+    
 # Solicitar el primer valor al usuario
 
 valor1 = input("Ingrese el primer valor:\n ")
