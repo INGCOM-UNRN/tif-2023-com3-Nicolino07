@@ -69,10 +69,9 @@ if operador == 1:
     bin(resultado) 
 elif operador == 2:
     hex(resultado)
-elif operador == 3:
-    oct(resultado)
 else:
-    print("Ingrese una opcion valida")
+    oct(resultado)
+
 
 # Mostrar el resultado final
 print(f"El resultado es:")
