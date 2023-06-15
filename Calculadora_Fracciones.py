@@ -44,8 +44,8 @@ def solo_int(entrada):
 
 # Solicitamos los valores de la primer fraccion
 num1 = input("Ingrese el numerador del primer valor: ")
-den1 = input("Ingrese el denominador del primer valor: ")
 num1 = solo_int(num1)
+den1 = input("Ingrese el denominador del primer valor: ")
 den1 = solo_int(den1)
 
 salida = False
@@ -61,26 +61,26 @@ while salida is False:
         if operador == '+':
              #Solicitamos los valores de la segunda fraccion 
             num2 = input("Ingrese el numerador del segundo valor: ")
-            den2 = input("Ingrese el denominador del segundo valor: ")
             num2 = solo_int(num2)
+            den2 = input("Ingrese el denominador del segundo valor: ")
             den2 = solo_int(den2)
             resultado = sumar_fracciones(num1, den1, num2, den2)
         elif operador == '-':
             num2 = input("Ingrese el numerador del segundo valor: ")
+            num2 = solo_int(num2)
             den2 = input("Ingrese el denominador del segundo valor: ")
-            num2 = solo_int(num1)
             den2 = solo_int(den2)
             resultado = restar_fracciones(num1, den1, num2, den2)
         elif operador == '*':
             num2 = input("Ingrese el numerador del segundo valor: ")
-            den2 = input("Ingrese el denominador del segundo valor: ")
             num2 = solo_int(num2)
+            den2 = input("Ingrese el denominador del segundo valor: ")
             den2 = solo_int(den2)
             resultado = multiplicar_fracciones(num1, den1, num2, den2)
         elif operador == '/':
             num2 = input("Ingrese el numerador del segundo valor: ")
-            den2 = input("Ingrese el denominador del segundo valor: ")
             num2 = solo_int(num2)
+            den2 = input("Ingrese el denominador del segundo valor: ")
             den2 = solo_int(den2)
             resultado = dividir_fracciones(num1, den1, num2, den2)
         else:
